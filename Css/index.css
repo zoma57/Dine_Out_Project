@@ -1,0 +1,996 @@
+header {
+    height: 100vh;
+    position: relative;
+}
+.header h4 {
+    color: var(--main-color);
+}
+.header h2 {
+    font-family: Poppins,sans-serif;
+    font-size: 40px;
+}
+.header .lines {
+    display: flex;
+    justify-content: center;
+}
+.header .lines:before,
+.header .lines:after {
+    content: "";
+    display: block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--second-color);
+    align-self: center;
+}
+header #carouselExampleControls>button {
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    top: initial;
+    bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    left: initial;
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right,#2c5364,#203a43,#0f2027);
+    background: linear-gradient(to right,#2c5364,#203a43,#0f2027);
+    color: var(--second-color);
+    opacity: 1;
+}
+header #carouselExampleControls>button:nth-of-type(1) {
+    right: 150px;
+}
+header #carouselExampleControls>button:nth-of-type(2) {
+    right: 70px;
+}
+header #carouselExampleControls>button i {
+    transform: scale(.8);
+    transition-duration: .5s;
+}
+header #carouselExampleControls>button:hover i {
+    color: var(--main-color);
+    transform: scale(1);
+}
+header #carouselExampleControls .carousel-item:not(:first-child),
+header #carouselExampleControls .carousel-item:first-child .bg {
+    background-position: center;
+    background-size: cover;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(1) .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/home-bg.jpg);
+    z-index: 1;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(1).active .bg {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(1):before {
+    z-index: 2;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(1) .content {
+    position: relative;
+    z-index: 3;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(1) .content h2 {
+    font-size: 90px;
+    font-weight: bolder;
+    transform: scale(.6);
+    opacity: 0;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(1).active .content h2 {
+    transform: scale(1);
+    transition-duration: 1s;
+    opacity: 1;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(1) .content p {
+    width: 50%;
+    transform: scale(.6);
+    opacity: 0;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(1).active .content p {
+    transform: scale(1);
+    transition-duration: 1s;
+    transition-delay: .2s;
+    opacity: 1;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(1) .content a {
+    transform: scale(.6);
+    opacity: 0;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(1).active .content a {
+    transform: scale(1);
+    transition: all 1s .4s;
+    opacity: 1;
+}
+header #carouselExampleControls .carousel-item .content a {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    letter-spacing: 1.5px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    padding: 8px 24px;
+}
+header #carouselExampleControls .carousel-item .content a:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+    transition-duration: 1s;
+}
+header #carouselExampleControls .carousel-item .content a:hover:before {
+    left: 0;
+}
+header #carouselExampleControls .carousel-item .content a span.text {
+    position: relative;
+    z-index: 2;
+    transition-duration: 1s;
+}
+header #carouselExampleControls .carousel-item .content a:hover span.text {
+    color: var(--second-color);
+}
+header #carouselExampleControls .carousel-item .content a:hover {
+    color: var(--main-color);
+}
+header #carouselExampleControls .carousel-item:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--third-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header #carouselExampleControls .carousel-item .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header #carouselExampleControls .carousel-item .content {
+    position: relative;
+    color: var(--second-color);
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2) {
+    background-image: url(../images/slider-bg1.jpg);
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part2 {
+    margin-top: 15px;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1,
+header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 .img {
+    width: 50%;
+    position: relative;
+    top: -200%;
+    z-index: 2;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 .img {
+    top: 8%;
+    transition: 1s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 h2 {
+    letter-spacing: 1.5px;
+    color: #e4c5a6;
+    font-size: 90px;
+    position: relative;
+    left: -150%;
+    opacity: 0;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 h2 {
+    left: 0;
+    opacity: 1;
+    transition: left 1s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 h4 {
+    letter-spacing: 1.5px;
+    color: var(--main-color);
+    font-size: 30px;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 hr {
+    border: none;
+    height: 4px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    opacity: 1;
+    width: 0%;
+    position: relative;
+    left: 50%;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 hr {
+    width: 100%;
+    left: 0;
+    transition-duration: 1s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 a,
+header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 p,
+header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 h4 {
+    transform: scale(0);
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 a,
+header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 p,
+header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 h4 {
+    transform: scale(1);
+    transition: 1s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part2 img {
+    position: relative;
+    top: -200%;
+    display: block;
+    animation-name: animate_1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part2 img {
+    transition-duration: 1s;
+    top: 0%;
+    animation-play-state: running;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3) {
+    background-image: url(../images/chef-bg.png);
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part1 {
+    margin-top: 15px;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part1,
+header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part1 img {
+    width: 75%;
+    margin: auto;
+    display: block;
+    position: relative;
+    left: -200%;
+    opacity: 0;
+    animation-name: animate_2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3).active .content .part1 img {
+    left: 0%;
+    opacity: 1;
+    transition-duration: 1s;
+    animation-play-state: running;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 h2 {
+    letter-spacing: 1.5px;
+    color: var(--second-color);
+    font-size: 50px;
+    position: relative;
+    top: -200%;
+    opacity: 0;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3).active .content .part2 h2 {
+    top: 0%;
+    opacity: 1;
+    transition-duration: 1s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 hr {
+    border: none;
+    height: 4px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    opacity: 1;
+    width: 0%;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3).active .content .part2 hr {
+    width: 40%;
+    transition-duration: 1s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 p {
+    position: relative;
+    bottom: -10%;
+    opacity: 0;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3).active .content .part2 p {
+    bottom: 0%;
+    opacity: 1;
+    transition-duration: 1s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 .row .item {
+    position: relative;
+    bottom: -25%;
+    opacity: 0;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3).active .content .part2 .row .item {
+    bottom: 0%;
+    opacity: 1;
+    transition-duration: 1s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3).active .content .part2 .row div[class*=col]:nth-of-type(1) .item {
+    transition-delay: .2s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3).active .content .part2 .row div[class*=col]:nth-of-type(2) .item {
+    transition-delay: .4s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3).active .content .part2 .row div[class*=col]:nth-of-type(3) .item {
+    transition-delay: .5s;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 a {
+    transform: scale(0);
+    opacity: 0;
+}
+header #carouselExampleControls .carousel-item:nth-of-type(3).active .content .part2 a {
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s;
+}
+header nav.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header nav.navbar button {
+    background-color: transparent;
+    width: 50px;
+    padding: 5px 10px;
+    height: 30px;
+    position: relative;
+    border: none;
+    transition-duration: .5s;
+}
+header nav.navbar button:focus {
+    box-shadow: none;
+}
+header nav.navbar button span {
+    display: block;
+    width: 32px;
+    height: 2px;
+    background-color: var(--second-color);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+header nav.navbar button span:nth-of-type(1) {
+    top: 5px;
+}
+header nav.navbar .offcanvas.show+button span:nth-of-type(1) {
+    animation-name: animate_3;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+header nav.navbar button span:nth-of-type(2) {
+    top: 15px;
+}
+header nav.navbar .offcanvas.show+button span:nth-of-type(2) {
+    opacity: 0;
+}
+header nav.navbar button span:nth-of-type(3) {
+    top: 25px;
+}
+header nav.navbar .offcanvas.show+button span:nth-of-type(3) {
+    animation-name: animate_4;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+header nav.navbar .offcanvas {
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right,#2c5364,#203a43,#0f2027);
+    background: linear-gradient(to right,#2c5364,#203a43,#0f2027);
+    color: var(--second-color);
+    border: none;
+}
+header nav.navbar .offcanvas .offcanvas-header {
+    justify-content: space-between;
+}
+header nav.navbar .offcanvas .offcanvas-header i {
+    font-size: 25px;
+    cursor: pointer;
+    transform: rotate(0);
+    transition-duration: .5s;
+}
+header nav.navbar .offcanvas .offcanvas-header i:hover {
+    transform: rotate(180deg);
+}
+header nav.navbar .offcanvas .offcanvas-body ul .nav-item .nav-link {
+    color: var(--second-color);
+    transition-duration: .5s;
+    transition-property: all;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+header nav.navbar .offcanvas .offcanvas-body ul .nav-item .nav-link:hover {
+    color: var(--main-color);
+    margin-left: 15px;
+    font-weight: 700;
+}
+header nav.navbar .offcanvas .social-media {
+    margin-top: 20px;
+}
+header nav.navbar .offcanvas .social-media ul li {
+    width: 40px;
+    height: 40px;
+    background-color: var(--second-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+header nav.navbar .offcanvas .social-media ul li:nth-of-type(1) {
+    z-index: 4;
+}
+header nav.navbar .offcanvas .social-media ul li:nth-of-type(2) {
+    left: -15%;
+    z-index: 3;
+    opacity: 0;
+}
+header nav.navbar .offcanvas.show .social-media ul li:nth-of-type(2) {
+    left: 0%;
+    opacity: 1;
+    transition-delay: 1s;
+    transition-duration: 1s;
+}
+header nav.navbar .offcanvas .social-media ul li:nth-of-type(3) {
+    left: -31%;
+    z-index: 2;
+    opacity: 0;
+}
+header nav.navbar .offcanvas.show .social-media ul li:nth-of-type(3) {
+    left: 0%;
+    opacity: 1;
+    transition-delay: .5s;
+    transition-duration: 1.5s;
+}
+header nav.navbar .offcanvas .social-media ul li:nth-of-type(4) {
+    left: -46%;
+    z-index: 1;
+    opacity: 0;
+}
+header nav.navbar .offcanvas.show .social-media ul li:nth-of-type(4) {
+    left: 0%;
+    opacity: 1;
+    transition-duration: 2s;
+}
+header nav.navbar .offcanvas .social-media ul li:not(:last-child) {
+    margin-right: 10px;
+}
+header nav.navbar .offcanvas .social-media ul li a {
+    color: var(--second-color);
+    font-size: 16px;
+}
+header nav.navbar .offcanvas .social-media ul li:nth-of-type(1) i {
+    color: #1877f2;
+}
+header nav.navbar .offcanvas .social-media ul li:nth-of-type(2) i {
+    color: #e4405f;
+}
+header nav.navbar .offcanvas .social-media ul li:nth-of-type(3) i {
+    color: #25d366;
+}
+header nav.navbar .offcanvas .social-media ul li:nth-of-type(4) i {
+    color: #1da1f2;
+}
+header nav.navbar .offcanvas .social-media ul li i {
+    transition-duration: 1s;
+}
+header nav.navbar .offcanvas .social-media ul li:hover i {
+    color: #f1b601;
+}
+#Products {
+    overflow: hidden;
+}
+#Products .col {
+    background: #0f2027;
+    background: -webkit-radial-gradient(#2c5364,#203a43,#0f2027);
+    background: radial-gradient(#2c5364,#203a43,#0f2027);
+    border: 1px solid var(--second-color);
+}
+#Products .col img {
+    width: 65px;
+    height: 65px;
+}
+#About .part1 .item h4 {
+    color: var(--main-color);
+    letter-spacing: 1.5px;
+}
+#About .part1 .item hr {
+    border: none;
+    height: 4px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    opacity: 1;
+    width: 40%;
+}
+#About .part1 .item .row .item img {
+    width: 25px;
+}
+#About .part1 .item .row .item span {
+    font-size: 20px;
+}
+#About .part1 .item a {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    letter-spacing: 1.5px;
+    position: relative;
+    overflow: hidden;
+}
+#About .part1 .item a:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+    transition-duration: 1s;
+}
+#About .part1 .item a:hover:before {
+    left: 0;
+}
+#About .part1 .item a span.text {
+    position: relative;
+    z-index: 2;
+    transition-duration: 1s;
+}
+#About .part1 .item a:hover span.text {
+    color: var(--second-color);
+}
+#About .part1 .item a:hover {
+    color: var(--main-color);
+}
+#About .part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About .part2 .item {
+    background-image: url(../images/about-img.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+#About .part2 .item:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 4px solid var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: animate_5;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#About .part2 .item h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #000;
+    font-weight: 700;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+}
+#Testimonials {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Testimonials video {
+    width: 100%;
+    transform: scale(1.02);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#Testimonials:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--third-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+#Testimonials .container {
+    position: relative;
+    z-index: 3;
+}
+#Testimonials .container>hr {
+    border: none;
+    height: 4px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    opacity: 1;
+    width: 25%;
+    margin: 20px auto;
+}
+#Testimonials .container>p {
+    width: 75%;
+}
+#Testimonials .container .item {
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right,rgb(44,83,100,.6),rgb(32,58,67,.6),rgb(15,32,39,.6));
+    background: linear-gradient(to right,rgb(44,83,100,.6),rgb(32,58,67,.6),rgb(15,32,39,.6));
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: 280px;
+    margin: auto;
+}
+#Testimonials .container .item img {
+    width: 50px;
+    height: 50px;
+}
+#Testimonials .container .item p {
+    font-weight: 700;
+}
+#Testimonials .container .item p sup {
+    color: var(--main-color);
+}
+#Menu .nav.nav-pills button.nav-link {
+    background: #0f2027;
+    background: -webkit-radial-gradient(#2c5364,#203a43,#0f2027);
+    background: radial-gradient(#2c5364,#203a43,#0f2027);
+    border: 1px solid var(--second-color);
+    border-radius: 0;
+    position: relative;
+}
+#Menu .nav.nav-pills button.nav-link:after {
+    content: "";
+    display: block;
+    border: 10px solid transparent;
+    border-right-width: 0;
+    border-right-color: var(--second-color);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transition-duration: .3s;
+}
+#Menu .nav.nav-pills button.nav-link.active:after {
+    border-right-width: 10px;
+}
+#Menu .nav.nav-pills button.nav-link:first-child {
+    border-radius: 5px 5px 0 0;
+}
+#Menu .nav.nav-pills button.nav-link:last-child {
+    border-radius: 0 0 5px 5px;
+}
+#Menu .nav.nav-pills button.nav-link img {
+    transform: scale(.7);
+    transition-duration: .5s;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+#Menu .nav.nav-pills button.nav-link.active img {
+    transform: scale(1);
+}
+#Menu .nav.nav-pills button.nav-link h6 {
+    color: var(--second-color);
+}
+#Menu .tab-content .tab-pane .item {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    top: 0%;
+    max-width: 280px;
+    margin: auto;
+}
+#Menu .tab-content .tab-pane.show .item {
+    border-color: var(--main-color);
+    transition-duration: 1s;
+}
+#Menu .tab-content .tab-pane .item:hover {
+    top: -10px;
+    box-shadow: 0 5px #f1b60166,0 10px #f1b6014d,0 15px #f1b60133,0 20px #f1b6011a,0 25px #f1b6010d,-5px 5px 40px #f1b60166;
+}
+#Menu .tab-content .tab-pane .item .head img {
+    transform: scale(0);
+    opacity: 0;
+}
+#Menu .tab-content .tab-pane.show .item .head img {
+    transform: scale(1);
+    opacity: 1;
+    transition-duration: 1s;
+}
+#Menu .tab-content .tab-pane .item .head h3 {
+    transform: scale(0);
+    opacity: 0;
+}
+#Menu .tab-content .tab-pane.show .item .head h3 {
+    transform: scale(1);
+    opacity: 1;
+    transition-duration: 1s;
+}
+#Menu .tab-content .tab-pane .item .body p {
+    color: #c1c1c1;
+    margin-bottom: 0;
+}
+#Menu .tab-content .tab-pane .item .body .rate i {
+    position: relative;
+    font-size: 12px;
+    color: var(--main-color);
+}
+#Menu .tab-content .tab-pane .item .body strong {
+    position: relative;
+    left: -100%;
+    opacity: 0;
+}
+#Menu .tab-content .tab-pane.show .item .body strong {
+    opacity: 1;
+    left: 0%;
+    transition-duration: 1s;
+}
+#Menu .tab-content .tab-pane .item .body p {
+    position: relative;
+    opacity: 0;
+    left: -20%;
+}
+#Menu .tab-content .tab-pane.show .item .body p {
+    opacity: 1;
+    left: 0%;
+    transition-duration: .5s;
+    transition-delay: .5s;
+}
+#Menu .tab-content .tab-pane .item .body .rate i:nth-of-type(1) {
+    opacity: 0;
+    z-index: 5;
+}
+#Menu .tab-content .tab-pane.show .item .body .rate i:nth-of-type(1) {
+    transition-duration: 1s;
+    transition-delay: .5s;
+    opacity: 1;
+}
+#Menu .tab-content .tab-pane .item .body .rate i:nth-of-type(2) {
+    left: -16%;
+    opacity: 0;
+    z-index: 4;
+}
+#Menu .tab-content .tab-pane.show .item .body .rate i:nth-of-type(2) {
+    left: 0%;
+    opacity: 1;
+    transition-delay: 1s;
+    transition-duration: 1s;
+}
+#Menu .tab-content .tab-pane .item .body .rate i:nth-of-type(3) {
+    left: -36%;
+    opacity: 0;
+    z-index: 3;
+}
+#Menu .tab-content .tab-pane.show .item .body .rate i:nth-of-type(3) {
+    left: 0%;
+    opacity: 1;
+    transition-delay: 1.5s;
+    transition-duration: 1s;
+}
+#Menu .tab-content .tab-pane .item .body .rate i:nth-of-type(4) {
+    left: -48%;
+    opacity: 0;
+    z-index: 2;
+}
+#Menu .tab-content .tab-pane.show .item .body .rate i:nth-of-type(4) {
+    left: 0%;
+    opacity: 1;
+    transition-delay: 2s;
+    transition-duration: 1s;
+}
+#Menu .tab-content .tab-pane .item .body .rate i:nth-of-type(5) {
+    left: -64%;
+    opacity: 0;
+    z-index: 1;
+}
+#Menu .tab-content .tab-pane.show .item .body .rate i:nth-of-type(5) {
+    left: 0%;
+    opacity: 1;
+    transition-delay: 2.5s;
+    transition-duration: 1s;
+}
+#Menu .tab-content .tab-pane .item .body .price p sup {
+    color: var(--main-color);
+}
+#Team {
+    padding-bottom: 60px;
+}
+#Team .row .item {
+    position: relative;
+}
+#Team .row .item img {
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    transition-duration: .5s;
+}
+#Team .row .item:hover img {
+    transform: skewY(4deg);
+}
+#Team .row .item .chef-info {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 90%;
+    padding: 10px 20px;
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right,#2c5364,#203a43,#0f2027);
+    background: linear-gradient(to right,#2c5364,#203a43,#0f2027);
+    color: var(--second-color);
+    transition-duration: .5s;
+}
+#Team .row .item:hover .chef-info {
+    bottom: 15%;
+    background: var(--main-color)
+}
+#Team .row .item .chef-info h4 {
+    color: var(--main-color);
+    transition-duration: .5s;
+}
+#Team .row .item:hover .chef-info h4 {
+    color: var(--second-color);
+}
+#Team .row .item .chef-info h3 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #c2c2c2;
+}
+#Team .row .item:hover .chef-info h3 {
+    color: var(--second-color);
+}
+#Order {
+    background-image: url(../images/bg_wood.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+#Order input::-webkit-calendar-picker-indicator {
+    padding: 0;
+    margin: 0 24px 0 0;
+}
+#Order .form-container .item {
+    background-image: url(../images/chef-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #333;
+    width: 75%;
+    padding: 30px 40px;
+    margin: auto;
+    border-radius: 10px;
+}
+#Order .form-container .item .input-group label {
+    background-color: var(--second-color);
+    border: none;
+}
+#Order .form-container .item label {
+    background-color: var(--second-color);
+}
+#Order .form-container .item h2 {
+    color: var(--main-color);
+}
+#Order .form-container .item input[type=date],
+#Order .form-container .item input[type=time] {
+    flex-direction: row-reverse;
+}
+#Order .form-container .item .form-control {
+    border: none;
+    padding: 3px 1px;
+}
+#Order .form-container .item .form-control:focus {
+    box-shadow: none;
+}
+#Order .form-container .item textarea {
+    resize: none;
+}
+#Order .form-container .item button {
+    transform: scale(.6);
+    opacity: 0;
+}
+#Order .form-container .item button {
+    transform: scale(1);
+    transition: all 1s .4s;
+    opacity: 1;
+}
+#Order .form-container .item button {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    letter-spacing: 1.5px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    padding: 8px 24px;
+}
+#Order .form-container .item button:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+    transition-duration: 1s;
+}
+#Order .form-container .item button:hover:before {
+    left: 0;
+}
+#Order .form-container .item button span.text {
+    position: relative;
+    z-index: 2;
+    transition-duration: 1s;
+}
+#Order .form-container .item button:hover span.text {
+    color: var(--second-color);
+}
+#Order .form-container .item button:hover {
+    color: var(--main-color);
+}
+#Order .bike-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Order .bike-container img.delivery-man {
+    position: relative;
+    animation-name: animate_6;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+footer {
+    background-color: #333;
+}
+footer #SemiCode {
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}

@@ -1,0 +1,365 @@
+@media (max-width: 1300px) {
+    p {
+        font-size:12px;
+    }
+    .header h4 {
+        font-size: 20px;
+    }
+    .header h2 {
+        font-size: 35px;
+    }
+    .header .lines img {
+        width: 15%;
+    }
+    .header .lines:before,.header .lines:after {
+        width: 15%;
+    }
+    header .content h1 {
+        font-size: 35px;
+    }
+    header .content p {
+        width: 100%;
+        font-size: 12px;
+    }
+    header #carouselExampleControls>button {
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    header #carouselExampleControls>button:nth-of-type(1) {
+        right: 90px;
+    }
+    header #carouselExampleControls>button:nth-of-type(2) {
+        right: 30px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(1) .content h2 {
+        font-size: 40px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(1) .content p {
+        width: initial;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 .img {
+        width: 40%;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 h2 {
+        font-size: 55px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 h4 {
+        font-size: 25px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 h2 {
+        font-size: 20px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 {
+        margin-top: 20px;
+    }
+    header #carouselExampleControls .carousel-item .content a {
+        font-size: 12px;
+        padding: 4px 16px;
+    }
+    #About .part1 h3 {
+        font-size: 17px;
+    }
+    #About .part1 .item .row .item span {
+        font-size: 15px;
+    };
+    #About .part2 .item {
+        height: 200px;
+    }
+    #Products {
+        overflow: auto;
+    }
+    #Products .col img {
+        width: 40px;
+        height: 40px;
+    }
+    #Testimonials {
+        height: initial;
+        background-image: url(../images/video_image-min.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #Testimonials video {
+        display: none;
+    }
+    #Testimonials .container>h2 {
+        font-size: 20px;
+    }
+    #Testimonials .container>p {
+        width: 100%;
+    }
+    #Menu .nav.nav-pills {
+        overflow: auto;
+    }
+    #Menu .nav.nav-pills button.nav-link {
+        padding: 15px 16px;
+    }
+    #Menu .nav.nav-pills button.nav-link:first-child {
+        border-radius: 5px 0 0 5px;
+    }
+    #Menu .nav.nav-pills button.nav-link:last-child {
+        border-radius: 0 5px 5px 0;
+    }
+    #Menu .nav.nav-pills button.nav-link:after {
+        border: 10px solid transparent;
+        border-bottom-width: 0;
+        border-bottom-color: #fff;
+        top: initial;
+        bottom: 0%;
+        right: initial;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #Menu .nav.nav-pills button.nav-link.active:after {
+        border-bottom-width: 10px;
+    }
+    #Team .row .item {
+        max-width: 280px;
+        margin: auto;
+    }
+    #Team .row .chef:not(:last-child) .item {
+        margin-bottom: 70px;
+    }
+    #Order .form-container .item {
+        width: 100%;
+        padding: 20px 25px;
+    }
+}
+@media (min-width: 371px) and (max-width: 1300px) {
+    header .content h1 {
+        font-size:45px;
+    }
+    header .content p {
+        font-size: 14px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(1) .content h2 {
+        font-size: 50px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(1) .content p {
+        width: 90%;
+    }
+    header #carouselExampleControls .carousel-item .content a {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 .img {
+        width: 35%;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 .img {
+        top: 7%;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 h2 {
+        font-size: 60px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 h4 {
+        margin: 16px 0;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 {
+        margin-top: 20px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 h2 {
+        font-size: 25px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 img {
+        width: 60%;
+    }
+    #About .part1 h3 {
+        font-size: 20px;
+    }
+    #About .part1 .item .row .item span {
+        font-size: 18px;
+    }
+    #About .part2 .item {
+        height: 250px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    p {
+        font-size:16px;
+    }
+    .header .lines img {
+        width: initial;
+    }
+    .header .lines:before,.header .lines:after {
+        width: 10%;
+    }
+    header .content h1 {
+        font-size: 50px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(1) .content h2 {
+        font-size: 60px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(1) .content p {
+        width: 80%;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 .box {
+        width: 75%;
+        margin: auto;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 img {
+        width: 40%;
+    }
+    #About .part1 h3 {
+        font-size: 25px;
+    }
+    #About .part2 .item {
+        height: 300px;
+    }
+    #Testimonials .container>h2 {
+        font-size: 30px;
+    }
+    #Menu .nav.nav-pills {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    header #carouselExampleControls>button {
+        width:50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    header #carouselExampleControls>button:nth-of-type(1) {
+        right: 130px;
+    }
+    header #carouselExampleControls>button:nth-of-type(2) {
+        right: 50px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(1) .content h2 {
+        font-size: 70px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(1) .content p {
+        width: 60%;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 {
+        margin-top: 20px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 h2 {
+        font-size: 60px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2) .content .part1 .img {
+        width: 50%;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 .img {
+        top: 7%;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 .box {
+        width: initial;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part1 {
+        margin-top: 20px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part1 img {
+        width: 100%;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 {
+        margin-top: 30px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 img {
+        width: 60%;
+    }
+    #About .part1 h3 {
+        font-size: 20px;
+    }
+    #About .part1 p {
+        font-size: 12px;
+    }
+    #About .part2 .item {
+        height: 250px;
+    }
+    #Testimonials {
+        height: 450px;
+        background-image: none;
+    }
+    #Testimonials video {
+        display: block;
+    }
+    #Testimonials .container>h2 {
+        font-size: 35px;
+    }
+    #Testimonials .container>p {
+        width: 90%;
+    }
+    #Testimonials .container .item {
+        padding: 15px;
+    }
+    #Testimonials .container .item img {
+        width: 45px;
+        height: 45px;
+    }
+    #Testimonials .container .item p {
+        font-size: 18px;
+    }
+    #Testimonials .container .item h4 {
+        font-size: 17px;
+    }
+    #Team .row .item .chef-info h4 {
+        font-size: 20px;
+    }
+    #Order .form-container .item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    header .content h1 {
+        font-size:60px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 {
+        margin-top: 10px;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(2).active .content .part1 .box {
+        width: initial;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part1 img {
+        width: 80%;
+    }
+    header #carouselExampleControls .carousel-item:nth-of-type(3) .content .part2 {
+        margin-top: 10px;
+    }
+    #Menu .nav.nav-pills button.nav-link {
+        padding: 8px 16px;
+    }
+    #Menu .nav.nav-pills button.nav-link:after {
+        border: 10px solid transparent;
+        border-right-width: 0;
+        border-right-color: #fff;
+        top: 50%;
+        bottom: initial;
+        right: 0%;
+        left: initial;
+        transform: translateY(-50%);
+    }
+    #Menu .nav.nav-pills button.nav-link.active:after {
+        border-right-width: 10px;
+    }
+    #Menu .nav.nav-pills button.nav-link:first-child {
+        border-radius: 5px 5px 0 0;
+    }
+    #Menu .nav.nav-pills button.nav-link:last-child {
+        border-radius: 0 0 5px 5px;
+    }
+    #Menu .tab-content .tab-pane .item .body strong {
+        font-size: 14px;
+    }
+    #Menu .tab-content .tab-pane .item .body .rate i {
+        font-size: 9px;
+    }
+    #Testimonials .container .item img {
+        width: 50px;
+        height: 50px;
+    }
+    #Testimonials .container .item p,
+    #Testimonials .container .item h4 {
+        font-size: 20px;
+    }
+    #Team .row .item .chef-info h4 {
+        font-size: 25px;
+    }
+    #Order .form-container .item {
+        width: 85%;
+    }
+}
